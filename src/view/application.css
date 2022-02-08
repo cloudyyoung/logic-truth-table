@@ -1,0 +1,103 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+    -fx-background-image: url("bg1.jpg");
+    -fx-background-size: cover;
+}
+
+.table-column {
+  -fx-alignment:	CENTER;
+  -fx-font-size:	19px;
+  -fx-table-cell-border-color: transparent;
+}
+
+.table-column:selected{
+	-fx-text-background-color: #8b008b;
+}
+
+
+.table-view{
+	-fx-background-color: transparent;
+	-fx-table-cell-border-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header,
+			.column-header-background, 
+			.column-header-background .filler {
+    -fx-background-color: transparent;
+    
+}
+
+.table-view .table-row{
+    -fx-text-fill:		#3c485e;
+    -fx-font-weight:	bold;
+    -fx-border-width:	0;
+}
+
+.table-view .table-row-cell,
+			.table-row-cell-background, 
+			.table-row-cell-background .filler {
+    -fx-background-color: transparent;
+    -fx-alignment:center;
+    
+}
+
+.table-view .table-row-cell:odd{
+    -fx-background-color:  #93f9b911;
+}
+.table-view .table-row-cell:even{
+    -fx-background-color:  #1dbbdd11;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #fff;
+    -fx-text-background-color: #8b008b;
+}
+
+.table-row-cell:selected .table-cell{
+	-fx-text-fill: #8b008b;
+}
+
+.text-field{
+	-fx-background-color: 	#ffffff55;
+	-fx-border-color: 		#f5f4e8;
+	-fx-border-width: 		0;
+	-fx-border-radius:		20px;
+    -fx-padding:            15,15;
+	-fx-faint-focus-color:  #ffffff55;
+}
+
+.text-field:focused {
+    -fx-background-color: #ffffff55;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color: #fff;
+}
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color: #fff;
+}
+
+.table-row-cell:highlighted {
+    -fx-background-color: #81c483;
+    -fx-background-radius: 15px;
+}

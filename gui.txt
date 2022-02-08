@@ -1,0 +1,61 @@
+1. Window GUI
+
+The application window should contain three major components:
+a. A textbox for user input, of any logical statement, such as (A /\ B) -> C.
+b. A label for displaying any error of the given statement. Eg, statement is invalid, at the place near "/\ BC) ->".
+c. A display of logic truth table of the given statement.
+
+
+
+2. Logic Truth Table
+
+The logic truth table should be dynamically generated according to the given statement. 
+Thus, the number of columns and rows are dynamic. 
+
+The table are mainly seperated into two parts:
+a. On the left size, all the variables and there truth values are displayed. Eg. A, B, C are corresponding to T, T, T, etc.
+b. On the right side, the truth values of the variables and symbols are displayed. Eg. (A /\ B) -> C is corresponding to T T T T T, etc.
+
+A  B  C  |  (A /\ B) -> C
+--------------------------------
+T  T  T  |  T   T T  T  T
+T  T  F  |  T   T T  F  F
+T  F  T  |  T   T F  T  F
+T  F  F  |  T   T F  F  F
+F  T  T  |  F   F T  T  T
+F  T  F  |  F   F T  F  F
+F  F  T  |  F   F F  T  F
+F  F  F  |  F   F F  F  F
+
+a. Select the best-fitting Pane as root
+b. Table Row should be put into a seperate FXML file for better readability and reusability
+c. Table should contain many Row component
+d. Give fxid for each of these components
+
+
+
+3. Table Row
+
+Each table Row should contain many columns. The number of columns is dynamic as well.
+For example, (A /\ B) -> C has 7 columns. The columns are: (, A, /\, B, ), ->, and C.
+
+TableRowController.java should have a method: public void setRow(ArrayList<Character> truthValues)
+This method will take an ArrayList of truth values which each value would always be one of 'T', 'F' or null. 
+The null value represents anything that takes place in the statement but does not have any actual truth value. Such as brackets.
+For instance, truthValues = {null, 'T', 'T', 'T', null, 'T', 'T'} is corresponding to:
+  (   A /\ B   )    ->    C
+null  T  T T  null   T    T
+
+For displaying, null value would just be empty space, nothing shows in the table, whereas for 'T' and 'F', showing them in the table.
+
+
+
+4. Result
+
+Eventually there should be following files:
+
+a. Window.fxml
+b. TableRow.fxml
+c. WindowController.java
+d. TableRowController.java
+

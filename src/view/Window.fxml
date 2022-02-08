@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox fx:id="vBox" alignment="TOP_CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WindowController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" text="Truth Table Generator" textFill="#515bd4">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="textLabel" alignment="TOP_CENTER" layoutX="46.0" layoutY="23.0" prefHeight="120.0" prefWidth="783.0" text="Guide">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="input" layoutX="168.0" layoutY="161.0" nodeOrientation="LEFT_TO_RIGHT" onKeyTyped="#keyTyped" prefHeight="55.0" prefWidth="756.0" promptText="Enter a statement">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="14.0" left="20.0" right="20.0" top="14.0" />
+         </padding></TextField>
+      <Label fx:id="promptLabel" alignment="TOP_LEFT" layoutX="141.0" layoutY="104.0" prefHeight="60.0" prefWidth="783.0" text="prompt">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="truthTable" pickOnBounds="false" prefHeight="331.0" prefWidth="683.0" visible="false">
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin></TableView>
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="100.0" right="100.0" top="50.0" />
+   </padding>
+</VBox>

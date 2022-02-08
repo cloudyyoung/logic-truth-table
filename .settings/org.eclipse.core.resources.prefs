@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/application/StatementParser.java=UTF-8
+encoding//src/connective/Biconditional.java=UTF-8
+encoding//src/connective/Conditional.java=UTF-8
+encoding//src/connective/Conjunction.java=UTF-8
+encoding//src/connective/Disjunction.java=UTF-8
